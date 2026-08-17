@@ -1,0 +1,29 @@
+# Open Actions (warm memory)
+
+Copy this to `warm.md` at your store root to enable open-action tracking.
+
+Hand-curated: edit it with ordinary file tools. The CLI never rewrites it, and it
+is not injected at session start — read it on demand.
+
+Entry format: the first line is `- **Title** (imp N[, due YYYY-MM-DD]):` where
+`imp` is importance 1–5 and defaults to 3 if omitted. `due` is optional. Nightly
+maintenance sorts entries by descending score — 60% deadline urgency, 40%
+importance — and promotes anything due within 14 days, or already overdue, into
+`hot.md` as an `[urgent]` line. Don't hand-sort; set `imp` and `due` correctly
+and let maintenance order them.
+
+- **Project One — blocked on external review** (imp 5, due 2030-03-01):
+  waiting on a third party; nothing actionable until they respond. Check weekly.
+  Note: wiki/projects/<note-id>.md
+
+- **Project Two — migration cutover** (imp 4, due 2030-03-15):
+  staged behind a feature flag. Cut over once Project One clears.
+
+- **Deadline One — annual renewal** (imp 3, due 2030-06-30):
+  recurring. No work required until the reminder window opens.
+
+- **Deadline Two — dependency upgrade** (imp 2):
+  no deadline. Do it when convenient.
+
+- **Project Three — paused deliberately** (imp 1):
+  stopped, not abandoned. Resume criteria are recorded in the linked note.
