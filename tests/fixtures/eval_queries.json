@@ -1,0 +1,186 @@
+{
+  "cases": [
+    {
+      "id": "pref-structured-logs",
+      "query": "Which log format does the ingest team prefer?",
+      "body": "Ingest logging preference favors structured JSON lines over free-form text messages.",
+      "expected_id": "pref-structured-logs"
+    },
+    {
+      "id": "decision-sqlite",
+      "query": "Which storage engine was chosen for the telemetry index?",
+      "body": "Storage decision selects SQLite FTS5 for immediate lexical indexing of telemetry records.",
+      "expected_id": "decision-sqlite"
+    },
+    {
+      "id": "project-backfill",
+      "query": "What is the historical backfill project currently doing?",
+      "body": "Backfill project state replays archived telemetry from cold object storage into the live index.",
+      "expected_id": "project-backfill"
+    },
+    {
+      "id": "env-python",
+      "query": "Which Python runtime version does the toolchain require?",
+      "body": "Toolchain environment requires Python 3.12 or newer for the telemetry packages.",
+      "expected_id": "env-python"
+    },
+    {
+      "id": "pattern-tdd",
+      "query": "What development workflow do the client libraries follow?",
+      "body": "Client library pattern follows red green refactor with a failing test written first.",
+      "expected_id": "pattern-tdd"
+    },
+    {
+      "id": "failure-secrets",
+      "query": "Which security failure must request logging avoid?",
+      "body": "Known logging failure risk is leaking bearer tokens through captured request traces.",
+      "expected_id": "failure-secrets"
+    },
+    {
+      "id": "fact-utc",
+      "query": "What timezone fact applies to recorded telemetry?",
+      "body": "Telemetry timestamp fact records every sample in UTC regardless of ground station timezone.",
+      "expected_id": "fact-utc"
+    },
+    {
+      "id": "pref-units",
+      "query": "Which report preference governs units on numeric columns?",
+      "body": "Report preference requires explicit SI units on every numeric measurement column.",
+      "expected_id": "pref-units"
+    },
+    {
+      "id": "decision-ranking",
+      "query": "How are lexical and semantic search rankings combined?",
+      "body": "Search decision combines lexical and semantic rankings through reciprocal rank fusion.",
+      "expected_id": "decision-ranking"
+    },
+    {
+      "id": "project-ingest",
+      "query": "Which planning project tracks ingest backlog and load?",
+      "body": "Ingest planning project tracks telemetry backlog and per-satellite scheduling load.",
+      "expected_id": "project-ingest"
+    },
+    {
+      "id": "env-staging",
+      "query": "How is the staging deployment laid out?",
+      "body": "Staging environment runs three ground station simulators behind a single ingest gateway.",
+      "expected_id": "env-staging"
+    },
+    {
+      "id": "pattern-atomic",
+      "query": "What safe file writing pattern protects stored records?",
+      "body": "Persistence pattern uses file locks and atomic temporary rename writes.",
+      "expected_id": "pattern-atomic"
+    },
+    {
+      "id": "failure-stale",
+      "query": "What maintenance failure occurs when the search index is old?",
+      "body": "Maintenance failure marks status stale when the search index age exceeds threshold.",
+      "expected_id": "failure-stale"
+    },
+    {
+      "id": "fact-batch-limit",
+      "query": "What size limit governs an ingest batch?",
+      "body": "Ingest batch fact enforces a conservative limit of five hundred telemetry samples.",
+      "expected_id": "fact-batch-limit"
+    },
+    {
+      "id": "pref-small-batches",
+      "query": "What batching preference reduces retry cost?",
+      "body": "Publishing preference favors many small batches over a few large payload uploads.",
+      "expected_id": "pref-small-batches"
+    },
+    {
+      "id": "decision-confirmed",
+      "query": "Which record status is accepted as canonical truth?",
+      "body": "Canonical truth decision accepts only records whose status is confirmed.",
+      "expected_id": "decision-confirmed"
+    },
+    {
+      "id": "project-sdk",
+      "query": "What does the client SDK project currently cover?",
+      "body": "SDK project state ships generated clients for three languages with shared retry logic.",
+      "expected_id": "project-sdk"
+    },
+    {
+      "id": "env-corpora",
+      "query": "Where is the external Orbit corpus located?",
+      "body": "External corpus environment reads Orbit notes from a read-only mirror directory.",
+      "expected_id": "env-corpora"
+    },
+    {
+      "id": "pattern-correction",
+      "query": "How does the correction workflow preserve truth during crashes?",
+      "body": "Correction pattern writes the confirmed replacement before superseding old truth.",
+      "expected_id": "pattern-correction"
+    },
+    {
+      "id": "failure-duplicate",
+      "query": "What data quality failure does maintenance deduplicate?",
+      "body": "Data quality failure is duplicate telemetry rows competing in canonical storage.",
+      "expected_id": "failure-duplicate"
+    }
+  ],
+  "distractors": [
+    {
+      "id": "dist-01",
+      "body": "Concise database manuals explain command syntax for SQLite users."
+    },
+    {
+      "id": "dist-02",
+      "body": "Project dashboards can display status and scheduling summaries."
+    },
+    {
+      "id": "dist-03",
+      "body": "Python testing tools run on several operating systems."
+    },
+    {
+      "id": "dist-04",
+      "body": "Semantic models may rank general document similarity."
+    },
+    {
+      "id": "dist-05",
+      "body": "A request trace contains many sequential spans."
+    },
+    {
+      "id": "dist-06",
+      "body": "External search engines index public web documents."
+    },
+    {
+      "id": "dist-07",
+      "body": "File maintenance can remove temporary cache entries."
+    },
+    {
+      "id": "dist-08",
+      "body": "Planning documents include capacity and scheduling estimates."
+    },
+    {
+      "id": "dist-09",
+      "body": "User interfaces often prefer compact navigation menus."
+    },
+    {
+      "id": "dist-10",
+      "body": "Security reviews inspect authorization and OAuth credentials."
+    },
+    {
+      "id": "dist-11",
+      "body": "Atomic database transactions protect relational rows."
+    },
+    {
+      "id": "dist-12",
+      "body": "Timezone conversion supports international calendar events."
+    },
+    {
+      "id": "dist-13",
+      "body": "Confirmed reservations appear in travel planning systems."
+    },
+    {
+      "id": "dist-14",
+      "body": "Log aggregation systems can customize retention windows."
+    },
+    {
+      "id": "dist-15",
+      "body": "Duplicate search results sometimes share similar titles."
+    }
+  ]
+}
