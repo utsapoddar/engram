@@ -1,0 +1,10 @@
+# Optional. Place at the root of your Engram store.
+# The canonical store is always the root itself, under the reserved name "local".
+# Declared corpora are indexed READ-ONLY and returned as noncanonical evidence.
+
+# [corpora.work]
+# path = "~/notes/work"
+
+# [corpora.agent-sessions]
+# path = "~/.some-agent/projects"
+# include_pattern = "*/memory/*.md"
