@@ -1,0 +1,6 @@
+# Example only. Replace every angle-bracket placeholder before installing.
+#
+# Keep maintenance and backup on schedules appropriate for your own system.
+
+<maintenance-minute> <maintenance-hour> * * * ENGRAM_ROOT=<store-root> <repo-root>/ops/maintain.sh
+<backup-minute> <backup-hour> * * * ENGRAM_ROOT=<store-root> <repo-root>/ops/backup.sh

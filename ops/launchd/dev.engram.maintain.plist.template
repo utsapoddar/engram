@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+  <key>Label</key><string>dev.engram.maintain</string>
+  <key>ProgramArguments</key>
+  <array><string>/bin/bash</string><string>${ENGRAM_ROOT}/ops/maintain.sh</string></array>
+  <key>StartCalendarInterval</key>
+  <dict><key>Hour</key><integer>${MAINTAIN_HOUR}</integer><key>Minute</key><integer>${MAINTAIN_MINUTE}</integer></dict>
+  <key>StandardOutPath</key><string>${ENGRAM_ROOT}/state/logs/maintain.out</string>
+  <key>StandardErrorPath</key><string>${ENGRAM_ROOT}/state/logs/maintain.err</string>
+</dict></plist>

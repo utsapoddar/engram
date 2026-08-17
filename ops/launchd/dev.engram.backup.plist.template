@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+  <key>Label</key><string>dev.engram.backup</string>
+  <key>ProgramArguments</key>
+  <array><string>/bin/bash</string><string>${ENGRAM_ROOT}/ops/backup.sh</string></array>
+  <key>StartCalendarInterval</key>
+  <dict><key>Hour</key><integer>${BACKUP_HOUR}</integer><key>Minute</key><integer>${BACKUP_MINUTE}</integer></dict>
+  <key>StandardOutPath</key><string>${ENGRAM_ROOT}/state/logs/backup.out</string>
+  <key>StandardErrorPath</key><string>${ENGRAM_ROOT}/state/logs/backup.err</string>
+</dict></plist>
