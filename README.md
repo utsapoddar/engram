@@ -13,7 +13,9 @@ below 0.90 on a [20-query seeded evaluation](tests/test_eval_fixture.py).
 
 [![Engram architecture diagram](docs/media/architecture.png)](docs/media/architecture.png)
 
-**[Watch the one-minute project explainer →](docs/media/explainer.mp4)**
+### Video walkthrough
+
+https://github.com/user-attachments/assets/9571b1f3-f752-4433-9229-c9ec74eecac0
 
 ## Quickstart
 
