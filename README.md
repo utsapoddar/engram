@@ -9,6 +9,12 @@ search indexes and generated context as disposable views.
 Retrieval quality is tested, not assumed: the suite fails if recall@5 drops
 below 0.90 on a [20-query seeded evaluation](tests/test_eval_fixture.py).
 
+## Architecture and walkthrough
+
+[![Engram architecture diagram](docs/media/architecture.png)](docs/media/architecture.png)
+
+**[Watch the one-minute project explainer →](docs/media/explainer.mp4)**
+
 ## Quickstart
 
 ```sh
